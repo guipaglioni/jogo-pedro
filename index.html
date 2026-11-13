@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Diversidade e dos Direitos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tema="0">
+  <header class="topo">
+    <h1>Diversidade &amp; Direitos</h1>
+    <div class="placar">Pontos: <strong id="pontos">0</strong></div>
+  </header>
+
+  <nav class="progresso" id="progresso">
+    <div class="etapa" data-painel="1"><span class="icone">🔓</span> Painel 1<small>Gênero</small></div>
+    <div class="etapa" data-painel="2"><span class="icone">🔒</span> Painel 2<small>LGBTQIA+</small></div>
+    <div class="etapa" data-painel="3"><span class="icone">🔒</span> Painel 3<small>Trabalhista</small></div>
+  </nav>
+
+  <main>
+    <!-- Tela inicial -->
+    <section class="tela ativa" id="tela-inicio">
+      <div class="cartao-central">
+        <h2>Bem-vindo(a)!</h2>
+        <p>Este jogo tem <strong>3 painéis</strong>. Complete um para liberar o próximo:</p>
+        <ol class="lista-paineis">
+          <li><strong>Painel 1 – Questões de gênero:</strong> ligue cada imagem ao texto correto.</li>
+          <li><strong>Painel 2 – Movimento LGBTQIA+:</strong> responda ao quiz.</li>
+          <li><strong>Painel 3 – Movimento trabalhista:</strong> monte a linha do tempo.</li>
+        </ol>
+        <button class="botao" id="btn-comecar">Começar</button>
+      </div>
+    </section>
+
+    <!-- Painel 1 -->
+    <section class="tela painel" id="painel-1">
+      <div class="banner banner-1">
+        <span class="banner-icone" aria-hidden="true">♀⚥♂</span>
+        <div>
+          <span class="banner-tag">Painel 1</span>
+          <h2>Questões de gênero</h2>
+          <p>Igualdade se constrói todos os dias</p>
+        </div>
+      </div>
+      <p class="instrucao">Clique em uma <strong>imagem</strong> e depois no <strong>texto</strong> que combina com ela.</p>
+      <div class="ligar" id="ligar">
+        <svg class="linhas" id="linhas"></svg>
+        <div class="coluna" id="coluna-imagens"></div>
+        <div class="coluna" id="coluna-textos"></div>
+      </div>
+      <p class="feedback" id="feedback-1"></p>
+      <button class="botao escondido" id="btn-fim-1">Ir para o Painel 2 →</button>
+    </section>
+
+    <!-- Painel 2 -->
+    <section class="tela painel" id="painel-2">
+      <div class="banner banner-2">
+        <span class="banner-icone" aria-hidden="true">🏳️‍🌈</span>
+        <div>
+          <span class="banner-tag">Painel 2</span>
+          <h2>Movimento LGBTQIA+</h2>
+          <p>Orgulho, memória e direitos</p>
+        </div>
+      </div>
+      <div class="quiz">
+        <div class="quiz-topo">
+          <span id="quiz-contador">Pergunta 1 de 8</span>
+          <div class="barra"><div class="barra-preenchida" id="quiz-barra"></div></div>
+        </div>
+        <h3 id="quiz-pergunta"></h3>
+        <div class="alternativas" id="quiz-alternativas"></div>
+        <p class="feedback" id="feedback-2"></p>
+        <button class="botao escondido" id="btn-proxima">Próxima →</button>
+      </div>
+    </section>
+
+    <!-- Painel 3 -->
+    <section class="tela painel" id="painel-3">
+      <div class="banner banner-3">
+        <span class="banner-icone" aria-hidden="true">✊</span>
+        <div>
+          <span class="banner-tag">Painel 3</span>
+          <h2>Movimento trabalhista</h2>
+          <p>Direitos não caem do céu: são conquistados</p>
+        </div>
+      </div>
+      <p class="instrucao">Arraste os cartões (ou use as setas ↑ ↓) para colocar os eventos em <strong>ordem cronológica</strong>, do mais antigo ao mais recente.</p>
+      <ul class="linha-tempo" id="linha-tempo"></ul>
+      <p class="feedback" id="feedback-3"></p>
+      <div class="acoes">
+        <button class="botao" id="btn-verificar">Verificar</button>
+        <button class="botao escondido" id="btn-fim-3">Ver resultado →</button>
+      </div>
+    </section>
+
+    <!-- Tela final -->
+    <section class="tela" id="tela-final">
+      <div class="cartao-central">
+        <h2>🏆 Parabéns!</h2>
+        <p>Você completou os 3 painéis.</p>
+        <p class="pontuacao-final">Pontuação total: <strong id="pontos-final">0</strong> / <span id="pontos-max">0</span></p>
+        <p id="mensagem-final"></p>
+        <button class="botao" id="btn-reiniciar">Jogar novamente</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
