@@ -5,13 +5,13 @@
    ========================================================= */
 
 const PARES_GENERO = [
-  { id: "igualdade", emoji: "⚖️", legenda: "Balança", texto: "Igualdade de gênero: mulheres e homens com os mesmos direitos e oportunidades." },
-  { id: "salario", emoji: "💰", legenda: "Dinheiro", texto: "Desigualdade salarial: mulheres ainda recebem menos que homens na mesma função." },
-  { id: "voto", emoji: "🗳️", legenda: "Urna", texto: "Sufrágio feminino: direito das mulheres ao voto, conquistado no Brasil em 1932." },
-  { id: "domestico", emoji: "🧹", legenda: "Vassoura", texto: "Divisão do trabalho doméstico: tarefas de casa devem ser compartilhadas por todos." },
-  { id: "violencia", emoji: "🛑", legenda: "Pare", texto: "Combate à violência contra a mulher: Lei Maria da Penha (2006)." },
-  { id: "educacao", emoji: "🎓", legenda: "Formatura", texto: "Acesso à educação: meninas e mulheres têm direito de estudar e se formar." },
-  { id: "politica", emoji: "🏛️", legenda: "Parlamento", texto: "Representatividade política: mais mulheres ocupando cargos públicos." }
+  { id: "igualdade", emoji: "⚖️", legenda: "Balança equilibrada", texto: "Igualdade de gênero: mulheres e homens com os mesmos direitos e oportunidades." },
+  { id: "salario", emoji: "💸", legenda: "Salário menor", texto: "Desigualdade salarial: mulheres ainda recebem menos que homens na mesma função." },
+  { id: "voto", emoji: "🗳️", legenda: "Urna de votação", texto: "Sufrágio feminino: direito das mulheres ao voto, conquistado no Brasil em 1932." },
+  { id: "domestico", emoji: "🧺", legenda: "Tarefas de casa", texto: "Divisão do trabalho doméstico: tarefas de casa devem ser compartilhadas por todos." },
+  { id: "violencia", emoji: "🙅‍♀️", legenda: "Basta de violência", texto: "Combate à violência contra a mulher: Lei Maria da Penha (2006)." },
+  { id: "educacao", emoji: "👩‍🎓", legenda: "Mulher estudante", texto: "Acesso à educação: meninas e mulheres têm direito de estudar e se formar." },
+  { id: "politica", emoji: "🏛️", legenda: "Congresso", texto: "Representatividade política: mais mulheres ocupando cargos públicos." }
 ];
 
 const QUIZ_LGBT = [
